@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* CSS styles for the landing page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .main-content {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .description {
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+
+  .description1 {
+    margin-bottom: 15px;
+    /* font-style: italic; */
+  }
+
+  .btn {
+    display: block; /* Make the button a block element */
+    margin: 20px auto; /* Center the button horizontally */
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: #0056b3;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: bottom;
+    bottom: 0;
+    /* width: 100%; */
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contact-info {
+    /* display: flex; */
+    gap: 20px;
+    font-size: small;
+  }
+
+  .contact-info a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .copyright {
+    font-size: 14px;
+    align-items: center;
+  }
+
+  /* Additional style for dropdown/select */
+  select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 60%;
+    margin: 10px 0;
+  }
+
+  .dropdown-container {
+    margin-bottom: 20px;
+  }
+
+  .info-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .section-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .section-list {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .section-list ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+
+  .section-list li {
+    margin-bottom: 5px;
+  }

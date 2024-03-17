@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disease Classification</title>
+  <link href="static/style.css" type="text/css" rel="stylesheet" media="screen" />
+</head>
+<body>
+  <header>
+    <h1>Text to Disease Classification</h1>
+    <!-- Description in header -->
+    <div class="description1">
+        <p>Formulated a large Language Model (LLM) by fine tuning pre-trained BERT transformer ,that can accurately classify disease based on short description of symptoms.</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="main-content">
+        <!-- Brief Description -->
+      <div class="description">
+        <p>-: Select you top 7 symptoms from corresponding dropdown and model will try to predict your disease based on the same :-</p>
+      </div>
+
+      <form action="{{ url_for('predict')}}" method="post">
+        <!-- 10 dropdown/select elements for 10 symptoms -->
+        <!-- Wrap each label and select in a div for proper formatting -->
+        <div class="dropdown-container">
+          <label for="dropdown1">Symptom 1</label>
+          <select id="dropdown1" name="Symptom1">
+            {% for i in range(sym_list|length) %}
+              <option value="{{ sym_list[i] }}">{{ sym_list[i] }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="dropdown-container">
+          <label for="dropdown2">Symptom 2</label>
+          <select id="dropdown2" name="Symptom2">
+            {% for i in range(sym_list|length) %}
+              <option value="{{ sym_list[i] }}">{{ sym_list[i] }}</option>
+            {% endfor %}
+          </select>
+        </div>
+
+        <div class="dropdown-container">
+            <label for="dropdown3">Symptom 3</label>
+            <select id="dropdown3" name="Symptom3">
+            {% for i in range(sym_list|length) %}
+               <option value="{{ sym_list[i] }}">{{ sym_list[i] }}</option>
+            {% endfor %}
+            </select>
+        </div>
+        <div class="dropdown-container">
+            <label for="dropdown4">Symptom 4</label>
+            <select id="dropdown4" name="Symptom4">
+            {% for i in range(sym_list|length) %}
+               <option value="{{ sym_list[i] }}">{{ sym_list[i] }}</option>
+            {% endfor %}
+            </select>
+        </div>
+        <div class="dropdown-container">
+            <label for="dropdown5">Symptom 5</label>
+            <select id="dropdown5" name="Symptom5">
+            {% for i in range(sym_list|length) %}
+                <option value="{{ sym_list[i] }}">{{ sym_list[i] }}</option>
+            {% endfor %}
+            </select>
+        </div>
+        <div class="dropdown-container">
+            <label for="dropdown6">Symptom 6</label>
+            <select id="dropdown6" name="Symptom6">
+            {% for i in range(sym_list|length) %}
+               <option value="{{ sym_list[i] }}">{{ sym_list[i] }}</option>
+            {% endfor %}
+            </select>
+        </div>
+        <div class="dropdown-container">
+            <label for="dropdown7">Symptom 7</label>
+            <select id="dropdown7" name="Symptom7">
+            {% for i in range(sym_list|length) %}
+              <option value="{{ sym_list[i] }}">{{ sym_list[i] }}</option>
+            {% endfor %}
+            </select>
+        </div>
+    
+
+        <!-- Submit button -->
+          <button type="submit" class="btn">Predict</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="contact-info">
+      <a href="mailto:himanshubag12@gmail.com">Email://himanshubag12@gmail.com</a>
+      <a href="https://www.linkedin.com/in/himanshu-bag" target="_blank">LinkedIn://@himanshu-bag</a>
+      <a href="https://github.com/0x1h0b" target="_blank">GitHub://@0x1h0b</a>
+    </div>
+    <br>
+    <div class="copyright">
+      &copy; 2023, Himanshu Bag
+    </div>
+  </footer>
+</body>
+</html>
