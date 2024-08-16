@@ -4,7 +4,7 @@ Formulated a large Language Model (LLM) by fine tuning pre-trained BERT transfor
 
 Deployed this system as a Flask-based web application, ensuring seamless accessibility and user-friendly interaction.
 
-![index](templates/static/flask_index.png "index html")
+![index](templates/static/flash_index.png "index html")
 
 ## Installation
 
