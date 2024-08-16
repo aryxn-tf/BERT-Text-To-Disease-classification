@@ -4,7 +4,7 @@ Formulated a large Language Model (LLM) by fine tuning pre-trained BERT transfor
 
 Deployed this system as a Flask-based web application, ensuring seamless accessibility and user-friendly interaction.
 
-![index](Text-to-Disease-Classification/templates/static/flash_index.png)
+![index](BERT-Text-to-Disease-Classification/templates/static/flash_index.png)
 
 ## Installation
 
@@ -57,4 +57,4 @@ Kaggle:// [disease-symptom-description-dataset](https://www.kaggle.com/datasets/
 when you enter the top 7 symptoms in the flask web app , it will display the top 5 disease based on the symptoms.
 
 Here is the sample result from flask , 
-![result](Text-to-Disease-Classification/templates/static/flask_result.png "result html")
+![result](BERT-Text-to-Disease-Classification/templates/static/flask_result.png "result html")
