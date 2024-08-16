@@ -14,7 +14,7 @@ if run sucessfully, you should be able to access the web app at localhost.
 Example:-   
 ```
 # clone repo
-[https://github.com/aryxn-tf/BERT-Text-To-Disease-classification.git]
+git clone https://github.com/aryxn-tf/BERT-Text-To-Disease-classification.git
 
 # create environment
 conda env create --name <envname> --file=environment.yml
